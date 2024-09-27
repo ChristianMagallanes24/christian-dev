@@ -18,7 +18,7 @@
     align-items: center;
 }
 
-/* Nav */
+/* Estilos generales del navbar */
 .navBar {
     display: flex;
     justify-content: end;
@@ -31,24 +31,48 @@
     height: 50px;
 }
 
+/* Botón de menú móvil (hamburguesa) */
+.nav-mobile {
+    display: none; /* Oculto en pantallas grandes */
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    width: 40px;
+    height: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-mobile span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: #fff;
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+
+/* Estilos para el contenedor de enlaces */
 .navLinksContainer {
     display: flex;
     gap: 20px;
     margin-right: 25px;
     list-style-type: none;
+    
+}
+.nav-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-links{
+    text-decoration: none;
+    color: #fff;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 500;
 }
 
-.nav-links {
-    text-decoration: none;
-    font-family: "Fredoka", sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    color: #fff;
-    cursor: pointer;
-}
-.nav-links:hover {
-    color: #00ffff;
-}
 
 /* Presentación en el header */
 .aboutContent {
@@ -259,6 +283,41 @@
     .textContainer2 p{
         font-size: 18px;
         
+    }
+}
+/* Ocultar el menú en pantallas pequeñas */
+@media (max-width: 768px) {
+    .navLinksContainer {
+        display: none; /* Ocultar menú por defecto */
+        flex-direction: column;
+        position: absolute;
+        text-align: center;
+        top: 50px;
+        right: 0;
+        background: rgba(255, 255, 255, 0);
+        backdrop-filter: blur(10px);
+        width: 100%;
+        height: auto;
+        padding: 10px 0;
+        margin: 0;
+    }
+
+    /* Mostrar el botón de menú móvil */
+    .nav-mobile {
+        display: flex;
+        margin-right: 25px;
+        width: 30px;
+    }
+
+    /* Estilos para los enlaces dentro del menú desplegable */
+    .nav-links {
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Mostrar el menú cuando se active */
+    .navBar.active .navLinksContainer {
+        display: flex;
     }
 }
 
