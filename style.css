@@ -319,7 +319,7 @@
     /* Mostrar el menú cuando se active */
     .navBar.active .navLinksContainer {
         display: flex;
-        background: rgba(255, 255, 255, 0.9); /* Cambiar la opacidad del fondo */
+        background: rgba(4, 85, 131, 0.63); /* Cambiar la opacidad del fondo */
         backdrop-filter: blur(10px);
         z-index: 1;
     }
