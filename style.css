@@ -288,14 +288,14 @@
 /* Ocultar el menú en pantallas pequeñas */
 @media (max-width: 768px) {
     .navLinksContainer {
-        display: none; /* Ocultar menú por defecto */
+        display: none;
         z-index: 1;
         flex-direction: column;
         position: absolute;
         text-align: center;
         top: 50px;
         right: 0;
-        background: rgba(255, 255, 255, 0);
+        background: rgba(255, 255, 255, 0.9); /* Cambiar la opacidad del fondo */
         backdrop-filter: blur(10px);
         width: 100%;
         height: auto;
@@ -319,7 +319,7 @@
     /* Mostrar el menú cuando se active */
     .navBar.active .navLinksContainer {
         display: flex;
-        background: rgba(255, 255, 255, 0);
+        background: rgba(255, 255, 255, 0.9); /* Cambiar la opacidad del fondo */
         backdrop-filter: blur(10px);
         z-index: 1;
     }
@@ -335,8 +335,7 @@
     /* Nav */
     .navLinksContainer {
         gap: 10px; /* Reducir el espacio entre los enlaces de navegación */
-        background: rgba(255, 255, 255, 0);
-        backdrop-filter: blur(10px);
+       
     }
 
     .nav-links {
@@ -421,8 +420,7 @@
     /* Nav */
     .navLinksContainer {
         gap: 10px; /* Reducir el espacio entre los enlaces de navegación */
-        background: rgba(255, 255, 255, 0);
-        backdrop-filter: blur(10px);
+       
     }
 
     .nav-links {
@@ -488,8 +486,7 @@
     /* Nav */
     .navLinksContainer {
         gap: 10px; /* Reducir el espacio entre los enlaces de navegación */
-        background: rgba(255, 255, 255, 0);
-        backdrop-filter: blur(10px);
+      
     }
 
     .nav-links {
