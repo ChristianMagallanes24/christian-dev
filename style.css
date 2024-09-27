@@ -321,10 +321,6 @@
         background: rgba(255, 255, 255, 0);
         backdrop-filter: blur(10px);
     }
-    .nav-menu{
-        background: rgba(255, 255, 255, 0);
-        backdrop-filter: blur(10px);
-    }
 }
 
 
@@ -479,10 +475,6 @@
     .sobreMiContainer {
         height: auto; /* Ajustar la altura de la sección sobre mí */
     }
-    .nav-menu{
-        background: rgba(255, 255, 255, 0);
-        backdrop-filter: blur(10px);
-    }
 }
 
 @media (max-width: 412px) {
@@ -549,9 +541,5 @@
     /* Sección 'Sobre mí' */
     .sobreMiContainer {
         height: auto; /* Ajustar la altura de la sección sobre mí */
-    }
-    .nav-menu{
-        background: rgba(255, 255, 255, 0);
-        backdrop-filter: blur(10px);
     }
 }
