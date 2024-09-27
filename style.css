@@ -318,6 +318,8 @@
     /* Mostrar el menú cuando se active */
     .navBar.active .navLinksContainer {
         display: flex;
+        background: rgba(255, 255, 255, 0);
+        backdrop-filter: blur(10px);
     }
 }
 
@@ -331,7 +333,8 @@
     /* Nav */
     .navLinksContainer {
         gap: 10px; /* Reducir el espacio entre los enlaces de navegación */
-        margin-right: 15px;
+        background: rgba(255, 255, 255, 0);
+        backdrop-filter: blur(10px);
     }
 
     .nav-links {
@@ -416,7 +419,8 @@
     /* Nav */
     .navLinksContainer {
         gap: 10px; /* Reducir el espacio entre los enlaces de navegación */
-        margin-right: 15px;
+        background: rgba(255, 255, 255, 0);
+        backdrop-filter: blur(10px);
     }
 
     .nav-links {
@@ -482,7 +486,8 @@
     /* Nav */
     .navLinksContainer {
         gap: 10px; /* Reducir el espacio entre los enlaces de navegación */
-        margin-right: 15px;
+        background: rgba(255, 255, 255, 0);
+        backdrop-filter: blur(10px);
     }
 
     .nav-links {
