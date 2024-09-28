@@ -76,6 +76,9 @@
     font-weight: 500;
 }
 
+.nav-links:hover{
+    color: #ff0303;
+}
 
 /* Presentación en el header */
 .aboutContent {
