@@ -31,10 +31,9 @@
     height: 50px;
 }
 
-/* Botón de menú móvil (hamburguesa) */
+/*(hamburguesa)*/
 .nav-mobile {
     display: none;
-    /* Oculto en pantallas grandes */
     flex-direction: column;
     justify-content: center;
     gap: 4px;
@@ -76,7 +75,7 @@
     font-weight: 500;
 }
 
-.nav-links:hover{
+.nav-links:hover {
     color: #ff0303;
 }
 
@@ -96,11 +95,8 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-    /* Para asegurarse de que la imagen no se deforme */
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.986) 70%, rgba(0, 0, 0, 0));
-    /* Aplica el degradado a la imagen */
     -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.726) 60%, rgba(0, 0, 0, 0));
-    /* Compatibilidad con Webkit (Chrome, Safari) */
 }
 
 .textContainer {
@@ -122,7 +118,8 @@
 }
 
 .tag span {
-    color: #c21036;;
+    color: #c21036;
+    ;
     font-size: 45px;
 }
 
@@ -168,7 +165,6 @@
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-  
 .icon:hover .icon-text {
     opacity: 1;
     transform: translateY(0);
@@ -178,7 +174,8 @@
 .line-bottom {
     width: 90%;
     height: 8px;
-    background-color: #c21036;;
+    background-color: #c21036;
+    ;
     border: none;
     margin: 0;
 }
@@ -190,7 +187,6 @@
 .line-bottom {
     margin-top: 10px;
 }
-
 
 /*Sobre mi container*/
 .sobreMiContainer {
@@ -215,10 +211,12 @@
     font-weight: 500;
     text-transform: uppercase;
 }
-.spanx{
+
+.spanx {
     color: #c21036;
     font-weight: 100;
 }
+
 .sobreSpan {
     color: #c21036;
     font-size: 70px;
@@ -240,7 +238,8 @@
     gap: 25px;
     overflow: hidden;
 }
-.titulo-proyectos{
+
+.titulo-proyectos {
     color: rgb(245, 246, 248);
     font-family: "Poppins";
     font-weight: 600;
@@ -249,7 +248,6 @@
 
 .carousel {
     display: flex;
-   
     justify-content: center;
     align-items: center;
 }
@@ -259,9 +257,8 @@
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    justify-content:center ;
+    justify-content: center;
     align-items: center;
-    
 }
 
 .proyectoBox {
@@ -336,29 +333,29 @@
     background-color: #ff0303;
 }
 
-
-  /* Tecnologias */
-.tecnologiasContainer{
+/* Tecnologias */
+.tecnologiasContainer {
     background: #0f0e0e;
     height: auto;
     overflow: hidden;
 }
-.tecnologias-titulo{
+
+.tecnologias-titulo {
     text-align: center;
-    
     font-family: "Poppins";
     font-weight: 600;
     font-size: 48px;
     color: rgb(245, 246, 248);
 }
-.tecnologia-icon{
+
+.tecnologia-icon {
     height: 140px;
     background-color: #c2103728;
     border-radius: 20%;
-    
     padding: 20px;
 }
-.tecnologias{
+
+.tecnologias {
     text-align: center;
     display: flex;
     justify-content: center;
@@ -367,23 +364,28 @@
     height: auto;
     background-color: #0f0e0e;
 }
-.titulo-tecnologia{
+
+.titulo-tecnologia {
     color: rgb(245, 246, 248);
-     font-family: "Poppins";
+    font-family: "Poppins";
     font-weight: 600;
 }
 
+/*Contacto*/
 .contacto-container {
     text-align: center;
     padding: 20px;
-    background-color: #0f0e0e; /* Color de fondo similar al de la imagen */
+    background-color: #0f0e0e;
+    /* Color de fondo similar al de la imagen */
     color: white;
-    border-top: 8px solid #c21036; /* Líneas superior e inferior */
+    border-top: 8px solid #c21036;
+    /* Líneas superior e inferior */
     border-bottom: 8px solid #c21036;
 }
 
 .contacto-container h3 {
-    font-family: 'Fredoka', sans-serif; /* Asegúrate de importar esta fuente si no lo has hecho */
+    font-family: 'Fredoka', sans-serif;
+    /* Asegúrate de importar esta fuente si no lo has hecho */
     font-size: 2rem;
     margin-bottom: 20px;
 }
@@ -403,7 +405,6 @@
     padding: 10px 20px;
     border: 1px solid #c21036;
     border-radius: 10px;
-    
 }
 
 .info-item a {
@@ -420,82 +421,61 @@
 
 
 
-/*Contacto*/
-
 @media (max-width: 944px) {
-
-    /* Header */
     .header {
         height: auto;
-        /* Reducir el alto del header */
     }
 
-    /* Nav */
     .navLinksContainer {
         gap: 10px;
-        /* Reducir el espacio entre los enlaces de navegación */
         margin-right: 15px;
     }
 
     .nav-links {
         font-size: 18px;
-        /* Reducir el tamaño de fuente de los enlaces de navegación */
     }
 
-    /* Presentación en el header */
     .imgContainer {
         height: 450px;
-        /* Ajustar el tamaño de la imagen */
     }
 
     .textContainer {
         width: 100%;
-        /* Hacer que el contenedor del texto ocupe el 100% del ancho */
         text-align: center;
-        /* Centrar el texto */
     }
 
     .name {
         font-size: 44px;
-        /* Reducir el tamaño de la fuente del nombre */
     }
 
     .tag {
         font-size: 24px;
-        /* Reducir el tamaño de la fuente de la etiqueta */
     }
 
     .tag span {
         font-size: 30px;
-        /* Ajustar el tamaño de la fuente dentro del span */
     }
 
     /* Redes sociales */
     .icon-bar {
         width: 100%;
-        /* Asegurarse de que las redes sociales ocupen todo el ancho */
     }
 
     .icons {
         gap: 10px;
-        /* Reducir la distancia entre los iconos */
     }
 
     .icon {
         font-size: 38px;
-        /* Ajustar el tamaño de los iconos */
     }
 
     .icon-text {
         font-size: 12px;
-        /* Reducir el tamaño del texto en los iconos */
     }
 
-    /* Líneas superior e inferior */
     .line-top,
     .line-bottom {
         height: 4px;
-        /* Ajustar el grosor de las líneas */
     }
 
     /* Sección 'Sobre mí' */
@@ -504,7 +484,6 @@
         padding-right: 18px;
         padding-bottom: 18px;
         height: auto;
-        /* Ajustar la altura de la sección sobre mí */
     }
 
     .sobreMiContainer2 {
@@ -514,7 +493,6 @@
 
     .textContainer2 p {
         font-size: 18px;
-
     }
 }
 
@@ -529,7 +507,6 @@
         top: 50px;
         right: 0;
         background: #ffffff;
-        /* Cambiar la opacidad del fondo */
         backdrop-filter: blur(10px);
         width: 100%;
         height: auto;
@@ -537,35 +514,32 @@
         margin: 0;
     }
 
-   /* Botón de menú móvil (hamburguesa) */
-.nav-mobile {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 4px;
-    margin-right: 25px;
-    width: 30px;
-    height: 30px;
-    background: none;
-    margin-top: 10px;
-    border: none;
-    cursor: pointer;
-    z-index: 9999;
-}
+    /* Botón de menú móvil (hamburguesa) */
+    .nav-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4px;
+        margin-right: 25px;
+        width: 30px;
+        height: 30px;
+        background: none;
+        margin-top: 10px;
+        border: none;
+        cursor: pointer;
+        z-index: 9999;
+    }
 
-/* Span dentro del botón del menú hamburguesa */
-.nav-mobile span {
-    display: block;
-    width: 100%;
-    height: 4px;
-    background-color: #fff; /* Aquí especificas que los spans sean blancos */
-    border-radius: 2px;
-    transition: 0.3s ease;
-}
+    /* Span dentro del botón del menú hamburguesa */
+    .nav-mobile span {
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: #fff;
+        border-radius: 2px;
+        transition: 0.3s ease;
+    }
 
-    
-
-    /* Estilos para los enlaces dentro del menú desplegable */
     .nav-links {
         padding: 10px;
         text-align: center;
@@ -575,15 +549,16 @@
     .navBar.active .navLinksContainer {
         display: flex;
         background: #0f0e0e;
-        /* Cambiar la opacidad del fondo */
         backdrop-filter: blur(10px);
         z-index: 1;
         color: #fff;
     }
-    .tecnologias{
+
+    .tecnologias {
         flex-wrap: wrap;
     }
-    .contact-info{
+
+    .contact-info {
         flex-wrap: wrap;
     }
 }
@@ -594,75 +569,57 @@
     /* Header */
     .header {
         height: auto;
-        /* Reducir el alto del header */
     }
 
-    /* Nav */
     .navLinksContainer {
         gap: 10px;
-        /* Reducir el espacio entre los enlaces de navegación */
-
     }
 
     .nav-links {
         font-size: 18px;
-        /* Reducir el tamaño de fuente de los enlaces de navegación */
     }
 
-    /* Presentación en el header */
     .imgContainer {
         height: 350px;
-        /* Ajustar el tamaño de la imagen */
     }
 
     .textContainer {
         width: 100%;
-        /* Hacer que el contenedor del texto ocupe el 100% del ancho */
         text-align: center;
-        /* Centrar el texto */
     }
 
     .name {
         font-size: 34px;
-        /* Reducir el tamaño de la fuente del nombre */
     }
 
     .tag {
         font-size: 24px;
-        /* Reducir el tamaño de la fuente de la etiqueta */
     }
 
     .tag span {
         font-size: 30px;
-        /* Ajustar el tamaño de la fuente dentro del span */
     }
 
     /* Redes sociales */
     .icon-bar {
         width: 100%;
-        /* Asegurarse de que las redes sociales ocupen todo el ancho */
     }
 
     .icons {
         gap: 10px;
-        /* Reducir la distancia entre los iconos */
     }
 
     .icon {
         font-size: 28px;
-        /* Ajustar el tamaño de los iconos */
     }
 
     .icon-text {
         font-size: 12px;
-        /* Reducir el tamaño del texto en los iconos */
     }
 
-    /* Líneas superior e inferior */
     .line-top,
     .line-bottom {
         height: 4px;
-        /* Ajustar el grosor de las líneas */
     }
 
     /* Sección 'Sobre mí' */
@@ -671,7 +628,6 @@
         padding-right: 18px;
         padding-bottom: 18px;
         height: auto;
-        /* Ajustar la altura de la sección sobre mí */
     }
 
     .sobreMiContainer2 {
@@ -681,7 +637,6 @@
 
     .textContainer2 p {
         font-size: 14px;
-
     }
 
     .sobreSpan {
@@ -692,44 +647,52 @@
     .sobreMiTitulo {
         font-size: 28px;
     }
-    .titulo-proyectos{
+
+    .titulo-proyectos {
         font-size: 28px;
     }
-    .proyectoBox{
+
+    .proyectoBox {
         height: 200px;
     }
-    .tecnologias-titulo{
+
+    .tecnologias-titulo {
         font-size: 28px;
         margin-top: 20px;
     }
-    .tecnologias{
+
+    .tecnologias {
         flex-wrap: wrap;
     }
-    .tecnologia-icon{
+
+    .tecnologia-icon {
         height: 80px;
     }
-    .titulo-tecnologia{
+
+    .titulo-tecnologia {
         font-size: 12px;
     }
-
 
     .contacto-container {
         text-align: center;
         display: flex;
         flex-direction: column;
         padding: 20px;
-        background-color: #0f0e0e; /* Color de fondo similar al de la imagen */
+        background-color: #0f0e0e;
+        /* Color de fondo similar al de la imagen */
         color: white;
-        border-top: 4px solid #c21036; /* Líneas superior e inferior */
+        border-top: 4px solid #c21036;
+        /* Líneas superior e inferior */
         border-bottom: 4px solid #c21036;
     }
-    
+
     .contacto-container h3 {
-        font-family: 'Fredoka', sans-serif; /* Asegúrate de importar esta fuente si no lo has hecho */
+        font-family: 'Fredoka', sans-serif;
+        /* Asegúrate de importar esta fuente si no lo has hecho */
         font-size: 2rem;
         margin-bottom: 20px;
     }
-    
+
     .contact-info {
         display: flex;
         justify-content: center;
@@ -738,7 +701,7 @@
         margin-bottom: 20px;
         font-family: "Poppins";
     }
-    
+
     .info-item {
         display: flex;
         align-items: center;
@@ -746,188 +709,83 @@
         padding: 10px 20px;
         border: 1px solid #c21036;
         border-radius: 10px;
-        
     }
-    
+
     .info-item a {
         color: #fff;
         text-decoration: none;
         font-size: 14px;
         font-family: "Poppins";
     }
-    
+
     .info-item span.icon {
         font-size: 14px;
         font-family: "Poppins";
     }
-    
-    
-    
+
 }
 
 
-@media (max-width: 412px) {
 
-    /* Header */
+
+@media (max-width: 412px) {
     .header {
         height: auto;
-        /* Reducir el alto del header */
     }
 
-    /* Nav */
     .navLinksContainer {
         gap: 10px;
-        /* Reducir el espacio entre los enlaces de navegación */
-
     }
 
     .nav-links {
         font-size: 14px;
-        /* Reducir el tamaño de fuente de los enlaces de navegación */
     }
 
-    /* Presentación en el header */
     .imgContainer {
         height: 250px;
-        /* Ajustar el tamaño de la imagen */
     }
 
     .textContainer {
         width: 100%;
-        /* Hacer que el contenedor del texto ocupe el 100% del ancho */
         text-align: center;
-        /* Centrar el texto */
     }
 
     .name {
         font-size: 40px;
-        /* Reducir el tamaño de la fuente del nombre */
     }
 
     .tag {
         font-size: 20px;
-        /* Reducir el tamaño de la fuente de la etiqueta */
     }
 
     .tag span {
         font-size: 30px;
-        /* Ajustar el tamaño de la fuente dentro del span */
     }
 
     /* Redes sociales */
     .icon-bar {
         width: 100%;
-        /* Asegurarse de que las redes sociales ocupen todo el ancho */
     }
 
     .icons {
         gap: 10px;
-        /* Reducir la distancia entre los iconos */
     }
 
     .icon {
         font-size: 24px;
-        /* Ajustar el tamaño de los iconos */
     }
 
     .icon-text {
         font-size: 12px;
-        /* Reducir el tamaño del texto en los iconos */
     }
 
-    /* Líneas superior e inferior */
     .line-top,
     .line-bottom {
         height: 4px;
-        /* Ajustar el grosor de las líneas */
     }
 
     /* Sección 'Sobre mí' */
     .sobreMiContainer {
         height: auto;
-        /* Ajustar la altura de la sección sobre mí */
-    }
-}
-
-@media (max-width: 412px) {
-
-    /* Header */
-    .header {
-        height: auto;
-        /* Reducir el alto del header */
-    }
-
-    /* Nav */
-    .navLinksContainer {
-        gap: 10px;
-        /* Reducir el espacio entre los enlaces de navegación */
-
-    }
-
-    .nav-links {
-        font-size: 14px;
-        /* Reducir el tamaño de fuente de los enlaces de navegación */
-    }
-
-    /* Presentación en el header */
-    .imgContainer {
-        height: 250px;
-        /* Ajustar el tamaño de la imagen */
-    }
-
-    .textContainer {
-        width: 100%;
-        /* Hacer que el contenedor del texto ocupe el 100% del ancho */
-        text-align: center;
-        /* Centrar el texto */
-    }
-
-    .name {
-        font-size: 40px;
-        /* Reducir el tamaño de la fuente del nombre */
-    }
-
-    .tag {
-        font-size: 20px;
-        /* Reducir el tamaño de la fuente de la etiqueta */
-    }
-
-    .tag span {
-        font-size: 30px;
-        /* Ajustar el tamaño de la fuente dentro del span */
-    }
-
-    /* Redes sociales */
-    .icon-bar {
-        width: 100%;
-        /* Asegurarse de que las redes sociales ocupen todo el ancho */
-    }
-
-    .icons {
-        gap: 10px;
-        /* Reducir la distancia entre los iconos */
-    }
-
-    .icon {
-        font-size: 24px;
-        /* Ajustar el tamaño de los iconos */
-    }
-
-    .icon-text {
-        font-size: 12px;
-        /* Reducir el tamaño del texto en los iconos */
-    }
-
-    /* Líneas superior e inferior */
-    .line-top,
-    .line-bottom {
-        height: 4px;
-        /* Ajustar el grosor de las líneas */
-    }
-
-    /* Sección 'Sobre mí' */
-    .sobreMiContainer {
-        height: auto;
-        /* Ajustar la altura de la sección sobre mí */
     }
 }
