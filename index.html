@@ -13,23 +13,24 @@
 </head>
 
 <body>
+     <!--Nav-->
+     <nav class="navBar">
+        <button class="nav-mobile">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-menu">
+            <ul class="navLinksContainer">
+                <li><a class="nav-links" href="/">Inicio</a></li>
+                <li><a class="nav-links" href="#proyectos">Proyectos</a></li>
+                <li><a class="nav-links" href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
     <!--Header-->
     <header class="header">
-        <!--Nav-->
-        <nav class="navBar">
-            <button class="nav-mobile">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-menu">
-                <ul class="navLinksContainer">
-                    <li><a class="nav-links" href="/">Inicio</a></li>
-                    <li><a class="nav-links" href="#proyectos">Proyectos</a></li>
-                    <li><a class="nav-links" href="#contacto">Contacto</a></li>
-                </ul>
-            </div>
-        </nav>
+       
         <!--Presentación en el header-->
         <div class="aboutContent">
             <!--Texto-->
@@ -43,29 +44,28 @@
             </div>
         </div>
     </header>
-     <!--Redes Sociales-->
+    <!--Redes Sociales-->
     <div class="icon-bar">
         <hr class="line-top">
         <div class="icons">
-            <a href="#" class="icon" data-aos="fade-up" data-aos-duration="500">
+            <a href="https://github.com/ChristianMagallanes24" target="_blank" class="icon" data-aos="fade-up" data-aos-duration="500">
                 <i class="fab fa-github"></i>
                 <span class="icon-text">GitHub</span>
             </a>
-            <a href="#" class="icon" data-aos="fade-up" data-aos-duration="500">
+            <a href="https://www.linkedin.com/in/christian-magallanes-dev/" target="_blank" class="icon" data-aos="fade-up" data-aos-duration="500">
                 <i class="fab fa-linkedin"></i>
                 <span class="icon-text">LinkedIn</span>
             </a>
-            <a href="#" class="icon" data-aos="fade-up" data-aos-duration="500">
+            <a href="https://wa.me/59892431954?text=Hola%20Christian,%20te%20contacto%20desde%20tu%20sitio%20web" class="icon" data-aos="fade-up" data-aos-duration="500">
                 <i class="fab fa-whatsapp"></i>
                 <span class="icon-text">WhatsApp</span>
             </a>
-            <a href="#" class="icon" data-aos="fade-up" data-aos-duration="500">
-                <i class="fas fa-user"></i>
-                <span class="icon-text">Perfil</span>
-            </a>
-            <a href="#" class="icon" data-aos="fade-up" data-aos-duration="500">
+            
+            <a href="https://drive.google.com/file/d/1A3tDT_7Z-6j4QfEgHrZ7khY1IUhUcFmM/view?usp=sharing" class="icon"
+                target="_blank" data-aos="fade-up" data-aos-duration="500">
                 <i class="fas fa-file-alt"></i>
                 <span class="icon-text">CV</span>
+
             </a>
         </div>
         <hr class="line-bottom">
@@ -73,96 +73,125 @@
 
     <!--Sobre mi-->
     <section class="sobreMiContainer">
-       <div class="textContainer2">
-        <h3 class="sobreMiTitulo"><span class="sobreSpan">sobre</span> mi</h3>
-        <p>Hola! Soy Christian Magallanes, un apasionado diseñador web frontend de 24 años, originario de Uruguay 🇺🇾.
-            Me encanta crear interfaces de usuario atractivas y funcionales que no solo impresionan, sino que también
-            mejoran la experiencia del usuario.
+        <div class="textContainer2">
+            <h3 data-aos="fade-right" data-aos-duration="800" class="sobreMiTitulo"><span class="sobreSpan">sobre</span>
+                mi</h3>
+            <p>Hola! Soy Christian Magallanes, un apasionado diseñador web frontend de 24 años, originario de Uruguay
+                🇺🇾.
+                Me encanta crear interfaces de usuario atractivas y funcionales que no solo impresionan, sino que
+                también
+                mejoran la experiencia del usuario.
 
-            Mi portafolio es un reflejo de mi versatilidad, abarcando desde sitios web estáticos hasta aplicaciones web
-            interactivas. 💻✨ Siempre estoy en la búsqueda de nuevos desafíos y oportunidades para aprender y crecer en
-            este emocionante campo.
+                Mi portafolio es un reflejo de mi versatilidad, abarcando desde sitios web estáticos hasta aplicaciones
+                web
+                interactivas. 💻✨ Siempre estoy en la búsqueda de nuevos desafíos y oportunidades para aprender y crecer
+                en
+                este emocionante campo.
 
-            Me inspiro en las últimas tendencias de diseño y desarrollo para ofrecer resultados excepcionales en cada
-            proyecto. ¡Estoy listo para dar vida a tus ideas! 🚀 ¿Hablamos?</p>
+                Me inspiro en las últimas tendencias de diseño y desarrollo para ofrecer resultados excepcionales en
+                cada
+                proyecto. ¡Estoy listo para dar vida a tus ideas! 🚀 ¿Hablamos?</p>
     </section>
 
     <!---Proyectos Container-->
-    <section class="proyectosContainer">
-        <h3 class="titulo-proyectos">Proyectos</h3>
-      <div class="carousel">
-        <div class="proyectosBoxes">
-            <div id="box" class="proyectoBox">
-                <div id="test">
-                    <p>a</p>
+    <section  class="proyectosContainer">
+        <h3 id="proyectos" class="titulo-proyectos"><span class="spanx">Proy</span>ectos</h3>
+        <div class="carousel">
+            <div class="proyectosBoxes">
+               
+                <div data-aos="fade-up" data-aos-duration="900" class="proyectoBox">
+                    <div class="overlay">
+                        <h4>dvincenzini</h4>
+                        <p>Buscador de perfiles de Github</p>
+                        <a href="https://github.com/ChristianMagallanes24/proyectodaniela" class="btn">Github</a>
+                        <a href="https://dvincenzini.vercel.app/" class="btn">Website</a>
+                    </div>
+                    <img class="img-box" src="./assets/p1.png" alt="p1">
                 </div>
-                <img class="img-box" src="./assets/p1.png" alt="p1">
-            </div>
-            <div id="box" class="proyectoBox">
-                <div id="test">
-                    <p>a</p>
+                <div data-aos="fade-up" data-aos-duration="900" class="proyectoBox">
+                    <div class="overlay">
+                        <h4>Digital Pen</h4>
+                        <p>agencia digital</p>
+                        <a href="#" class="btn">Github</a>
+                        <a href="http://digitalpen.shop/" class="btn">Website</a>
+                    </div>
+                    <img class="img-box" src="./assets/p3.png" alt="p1">
                 </div>
-                <img class="img-box" src="./assets/p1.png" alt="p1">
-            </div>
-            <div class="proyectoBox">
-                <img class="img-box" src="./assets/p1.png" alt="p1">
-            </div>
-            <div class="proyectoBox">
-                <img class="img-box" src="./assets/p1.png" alt="p1">
-            </div>
-            <div class="proyectoBox">
-                <img class="img-box" src="./assets/p1.png" alt="p1">
+                <div data-aos="fade-up" data-aos-duration="900" class="proyectoBox">
+                    <div class="overlay">
+                        <h4>Github Profile</h4>
+                        <p>Buscador de perfiles de Github</p>
+                        <a href="#" class="btn">Github</a>
+                        <a href="#" class="btn">Website</a>
+                    </div>
+                    <img class="img-box" src="./assets/p1.png" alt="p1">
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="900" class="proyectoBox">
+                    <div class="overlay">
+                        <h4>Calculador de gastos</h4>
+                        <p>Buscador de perfiles de Github</p>
+                        <a href="https://github.com/ChristianMagallanes24/CalculadorDeGastos" class="btn">Github</a>
+                        <a href="https://calculador-de-gastos.vercel.app/" class="btn">Website</a>
+                    </div>
+                    <img class="img-box" src="./assets/p2.png" alt="p1">
+                </div>
             </div>
         </div>
-      </div>
- <!--
-      <button class="prevBtn">&#10094;</button>
-      <button class="nextBtn">&#10095;</button>     
- -->
     </section>
     <!--Tecnologias container-->
     <section class="tecnologiasContainer">
-        <h3>Tecnologias</h3>
+        <h3 class="tecnologias-titulo">Tecno<span class="spanx">logias</span></h3>
 
         <div class="tecnologias">
 
-            <div class="tecnologia">
+            <div data-aos="fade-up" data-aos-duration="900" class="tecnologia">
                 <img class="tecnologia-icon" src="./assets/html-logo.png" alt="">
-                <p>Html</p>
+                <p class="titulo-tecnologia">HTML</p>
             </div>
-
-            <div class="tecnologia"></div>
+            <div data-aos="fade-up" data-aos-duration="900" class="tecnologia">
                 <img class="tecnologia-icon" src="./assets/css-logo.png" alt="">
-                <p>CSS</p>
+                <p class="titulo-tecnologia">CSS</p>
             </div>
-
-            <div class="tecnologia"></div>
+            <div data-aos="fade-up" data-aos-duration="900" class="tecnologia">
                 <img class="tecnologia-icon" src="./assets/sass.png" alt="">
-                <p>Sass</p>
+                <p class="titulo-tecnologia">SASS</p>
             </div>
-
-            <div class="tecnologia">
+            <div data-aos="fade-up" data-aos-duration="900" class="tecnologia">
                 <img class="tecnologia-icon" src="./assets/jss.webp" alt="">
-                <p>JavaScript</p>
+                <p class="titulo-tecnologia">JAVASCRIPT</p>
             </div>
-           
-            <div class="tecnologia">
+            <div data-aos="fade-up" data-aos-duration="900" class="tecnologia">
                 <img class="tecnologia-icon" src="./assets/React.webp" alt="">
-                <p>React Js</p>
+                <p class="titulo-tecnologia">REACT JS</p>
             </div>
-
-            <div class="tecnologia"></div>
+            <div data-aos="fade-up" data-aos-duration="900" class="tecnologia">
                 <img class="tecnologia-icon" src="./assets/git.png" alt="">
-                <p>git</p>
+                <p class="titulo-tecnologia">GIT</p>
             </div>
-            
-
-           
-            
         </div>
     </section>
 
     <!--Contacto-->
+
+    <section id="contacto" class="contacto-container">
+        <h3><span class="spanx">Conta</span>ctame</h3>
+        <div class="contact-info">
+            <div class="info-item">
+                <span class="icon">📧</span>
+                <a href="desarrollowebgront@gmail.com">desarrollowebgront@gmail.com</a>
+            </div>
+            <div class="info-item">
+                <span class="icon">📞</span>
+                <a href="tel:+51956402456">+59892431954</a>
+            </div>
+            <div class="info-item">
+                <span class="icon">📍</span>
+                <span>Uruguay, canelones ciudad</span>
+            </div>
+        </div>
+       
+    </section>
     
 
     <!--Footer-->

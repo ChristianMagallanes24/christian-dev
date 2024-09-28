@@ -1,5 +1,5 @@
 /* Importar fuentes */
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* Global */
 * {
@@ -10,7 +10,7 @@
 
 /* Header */
 .header {
-    background: linear-gradient(0deg, #c95757 0%, #8e17f0 100%);
+    background: linear-gradient(0deg, #0f0e0e 0%, #000000 100%);
     height: 600px;
     display: flex;
     flex-direction: column;
@@ -25,8 +25,8 @@
     position: sticky;
     top: 0;
     width: 100%;
-    z-index: 1;
-    background: rgba(255, 255, 255, 0);
+    z-index: 9999;
+    background: #0f0e0e;
     backdrop-filter: blur(10px);
     height: 50px;
 }
@@ -49,7 +49,7 @@
     display: block;
     width: 100%;
     height: 4px;
-    background: #fff;
+    background: #0f0e0e;
     border-radius: 2px;
     transition: 0.3s ease;
 }
@@ -72,7 +72,7 @@
 .nav-links {
     text-decoration: none;
     color: #fff;
-    font-family: "Fredoka", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
 }
 
@@ -105,27 +105,27 @@
 }
 
 .name {
-    font-family: "Fredoka", sans-serif;
+    font-family: "Poppins";
     font-size: 70px;
     font-weight: 500;
     color: #fff;
 }
 
 .tag {
-    font-family: "Fredoka", sans-serif;
+    font-family: "Poppins";
     font-size: 30px;
     font-weight: 500;
     color: #fff;
 }
 
 .tag span {
-    color: gold;
+    color: #c21036;;
     font-size: 45px;
 }
 
 /* Redes sociales */
 .icon-bar {
-    background-color: #c95757;
+    background-color: #0f0e0e;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -153,7 +153,7 @@
 .icon-text {
     position: absolute;
     bottom: -30px;
-    font-family: "Fredoka", sans-serif;
+    font-family: "Poppins";
     background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
     padding: 5px 10px;
@@ -175,7 +175,7 @@
 .line-bottom {
     width: 90%;
     height: 8px;
-    background-color: #1a5f97;
+    background-color: #c21036;;
     border: none;
     margin: 0;
 }
@@ -194,8 +194,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #c95757;
-    height: 400px;
+    background-color: #0f0e0e;
     color: #fff;
 }
 
@@ -208,35 +207,40 @@
 
 .sobreMiTitulo {
     text-align: start;
-    font-family: "Fredoka", sans-serif;
+    font-family: "Poppins";
     font-size: 48px;
     font-weight: 500;
+    text-transform: uppercase;
 }
-
+.spanx{
+    color: #c21036;
+    font-weight: 100;
+}
 .sobreSpan {
-    color: gold;
+    color: #c21036;
     font-size: 70px;
     border-bottom: solid 8px;
 }
 
 .textContainer2 p {
-    font-family: "Fredoka", sans-serif;
+    font-family: "Poppins";
     font-weight: 400;
-    font-size: 22px;
+    font-size: 18px;
 }
 
 /*Proyectos container*/
 .proyectosContainer {
-    background-color: #c95757;
+    background-color: #0f0e0e;
     display: flex;
     flex-direction: column;
     align-items: center;
-   
+    gap: 25px;
+    overflow: hidden;
 }
 .titulo-proyectos{
-    color: gold;
-    font-family: "Fredoka", sans-serif;
-    font-weight: 700;
+    color: rgb(245, 246, 248);
+    font-family: "Poppins";
+    font-weight: 600;
     font-size: 52px;
 }
 
@@ -258,41 +262,162 @@
 }
 
 .proyectoBox {
+    position: relative;
     background-color: #fff;
     width: 300px;
     height: 300px;
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
-.imgBoxContainer,
+.proyectoBox:hover {
+    transform: scale(1.05);
+}
+
 .img-box {
     height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
-  .ico-box{
-    font-size: 40px;
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.proyectoBox:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-family: "Poppins";
+    font-weight: 600;
+}
+
+.overlay p {
+    font-size: 1rem;
+    font-family: "Poppins";
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #c21036;
+    color: white;
+    padding: 10px 20px;
+    font-family: "Poppins";
+    font-weight: 600;
+    margin: 5px;
+    border-radius: 5px;
     text-decoration: none;
-    color: #000;
-  }
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff0303;
+}
 
 
   /* Tecnologias */
 .tecnologiasContainer{
-    background: #c95757;
+    background: #0f0e0e;
     height: auto;
+    overflow: hidden;
+}
+.tecnologias-titulo{
+    text-align: center;
+    
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 48px;
+    color: rgb(245, 246, 248);
 }
 .tecnologia-icon{
     height: 140px;
+    background-color: #c2103728;
+    border-radius: 20%;
+    
+    padding: 20px;
 }
 .tecnologias{
+    text-align: center;
     display: flex;
-    width: 100%;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
     height: auto;
-    background-color: rebeccapurple;
+    background-color: #0f0e0e;
 }
-/* Pantallas medianas pequeñas (entre 576px y 768px) */
-/* Adaptación para pantallas móviles (máximo ancho de 412px) */
+.titulo-tecnologia{
+    color: rgb(245, 246, 248);
+     font-family: "Poppins";
+    font-weight: 600;
+}
+
+.contacto-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #0f0e0e; /* Color de fondo similar al de la imagen */
+    color: white;
+    border-top: 8px solid #c21036; /* Líneas superior e inferior */
+    border-bottom: 8px solid #c21036;
+}
+
+.contacto-container h3 {
+    font-family: 'Fredoka', sans-serif; /* Asegúrate de importar esta fuente si no lo has hecho */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+    font-family: "Poppins";
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border: 1px solid #c21036;
+    border-radius: 10px;
+    
+}
+
+.info-item a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: "Poppins";
+}
+
+.info-item span.icon {
+    font-size: 1.5rem;
+    font-family: "Poppins";
+}
+
+
+
+/*Contacto*/
 
 @media (max-width: 944px) {
 
@@ -400,7 +525,7 @@
         text-align: center;
         top: 50px;
         right: 0;
-        background: rgba(255, 255, 255, 0.9);
+        background: #ffffff;
         /* Cambiar la opacidad del fondo */
         backdrop-filter: blur(10px);
         width: 100%;
@@ -409,12 +534,33 @@
         margin: 0;
     }
 
-    /* Mostrar el botón de menú móvil */
-    .nav-mobile {
-        display: flex;
-        margin-right: 25px;
-        width: 30px;
-    }
+   /* Botón de menú móvil (hamburguesa) */
+.nav-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    margin-right: 25px;
+    width: 30px;
+    height: 30px;
+    background: none;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+/* Span dentro del botón del menú hamburguesa */
+.nav-mobile span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #fff; /* Aquí especificas que los spans sean blancos */
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+
+    
 
     /* Estilos para los enlaces dentro del menú desplegable */
     .nav-links {
@@ -425,10 +571,17 @@
     /* Mostrar el menú cuando se active */
     .navBar.active .navLinksContainer {
         display: flex;
-        background: rgba(4, 85, 131, 0.63);
+        background: #0f0e0e;
         /* Cambiar la opacidad del fondo */
         backdrop-filter: blur(10px);
         z-index: 1;
+        color: #fff;
+    }
+    .tecnologias{
+        flex-wrap: wrap;
+    }
+    .contact-info{
+        flex-wrap: wrap;
     }
 }
 
@@ -524,18 +677,89 @@
     }
 
     .textContainer2 p {
-        font-size: 18px;
+        font-size: 14px;
 
     }
 
     .sobreSpan {
-        font-size: 44px;
+        font-size: 34px;
         border-bottom: solid 8px;
     }
 
     .sobreMiTitulo {
         font-size: 28px;
     }
+    .titulo-proyectos{
+        font-size: 28px;
+    }
+    .proyectoBox{
+        height: 200px;
+    }
+    .tecnologias-titulo{
+        font-size: 28px;
+        margin-top: 20px;
+    }
+    .tecnologias{
+        flex-wrap: wrap;
+    }
+    .tecnologia-icon{
+        height: 80px;
+    }
+    .titulo-tecnologia{
+        font-size: 12px;
+    }
+
+
+    .contacto-container {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        background-color: #0f0e0e; /* Color de fondo similar al de la imagen */
+        color: white;
+        border-top: 4px solid #c21036; /* Líneas superior e inferior */
+        border-bottom: 4px solid #c21036;
+    }
+    
+    .contacto-container h3 {
+        font-family: 'Fredoka', sans-serif; /* Asegúrate de importar esta fuente si no lo has hecho */
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    
+    .contact-info {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 20px;
+        font-family: "Poppins";
+    }
+    
+    .info-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 20px;
+        border: 1px solid #c21036;
+        border-radius: 10px;
+        
+    }
+    
+    .info-item a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+        font-family: "Poppins";
+    }
+    
+    .info-item span.icon {
+        font-size: 14px;
+        font-family: "Poppins";
+    }
+    
+    
+    
 }
 
 
