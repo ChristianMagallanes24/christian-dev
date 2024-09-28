@@ -10,7 +10,7 @@
 
 /* Header */
 .header {
-    background: linear-gradient(0deg, #000000 0%, #1a5f97 100%);
+    background: linear-gradient(0deg, #c95757 0%, #8e17f0 100%);
     height: 600px;
     display: flex;
     flex-direction: column;
@@ -33,7 +33,8 @@
 
 /* Botón de menú móvil (hamburguesa) */
 .nav-mobile {
-    display: none; /* Oculto en pantallas grandes */
+    display: none;
+    /* Oculto en pantallas grandes */
     flex-direction: column;
     justify-content: center;
     gap: 4px;
@@ -59,14 +60,16 @@
     gap: 20px;
     margin-right: 25px;
     list-style-type: none;
-    
+
 }
-.nav-menu{
+
+.nav-menu {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.nav-links{
+
+.nav-links {
     text-decoration: none;
     color: #fff;
     font-family: "Fredoka", sans-serif;
@@ -81,31 +84,40 @@
     display: flex;
     flex-wrap: wrap-reverse;
 }
+
 .imgContainer {
     height: 550px;
 }
+
 .imgContainer img {
     height: 100%;
     width: 100%;
-    object-fit: cover; /* Para asegurarse de que la imagen no se deforme */
-    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.986) 70%, rgba(0, 0, 0, 0)); /* Aplica el degradado a la imagen */
-    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.726) 60%, rgba(0, 0, 0, 0)); /* Compatibilidad con Webkit (Chrome, Safari) */
+    object-fit: cover;
+    /* Para asegurarse de que la imagen no se deforme */
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.986) 70%, rgba(0, 0, 0, 0));
+    /* Aplica el degradado a la imagen */
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.726) 60%, rgba(0, 0, 0, 0));
+    /* Compatibilidad con Webkit (Chrome, Safari) */
 }
+
 .textContainer {
     width: 400px;
 }
+
 .name {
     font-family: "Fredoka", sans-serif;
     font-size: 70px;
     font-weight: 500;
     color: #fff;
 }
+
 .tag {
     font-family: "Fredoka", sans-serif;
     font-size: 30px;
     font-weight: 500;
     color: #fff;
 }
+
 .tag span {
     color: gold;
     font-size: 45px;
@@ -113,7 +125,7 @@
 
 /* Redes sociales */
 .icon-bar {
-    background-color: #000;
+    background-color: #c95757;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -126,6 +138,7 @@
     align-items: center;
     gap: 20px;
 }
+
 .icon {
     position: relative;
     display: flex;
@@ -136,6 +149,7 @@
     font-size: 40px;
     cursor: pointer;
 }
+
 .icon-text {
     position: absolute;
     bottom: -30px;
@@ -150,15 +164,18 @@
     transform: translateY(10px);
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
+
+  
 .icon:hover .icon-text {
     opacity: 1;
     transform: translateY(0);
 }
 
-.line-top, .line-bottom {
+.line-top,
+.line-bottom {
     width: 90%;
     height: 8px;
-    background-color: #1a5f97 ;
+    background-color: #1a5f97;
     border: none;
     margin: 0;
 }
@@ -173,100 +190,184 @@
 
 
 /*Sobre mi container*/
-.sobreMiContainer{
+.sobreMiContainer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #000000;
+    background-color: #c95757;
     height: 400px;
     color: #fff;
 }
-.textContainer2{
+
+.textContainer2 {
     width: 800px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.sobreMiTitulo{
+
+.sobreMiTitulo {
     text-align: start;
     font-family: "Fredoka", sans-serif;
     font-size: 48px;
     font-weight: 500;
 }
-.sobreSpan{
+
+.sobreSpan {
     color: gold;
     font-size: 70px;
-    border-bottom: solid 8px ;
+    border-bottom: solid 8px;
 }
-.textContainer2 p{
+
+.textContainer2 p {
     font-family: "Fredoka", sans-serif;
     font-weight: 400;
     font-size: 22px;
 }
 
+/*Proyectos container*/
+.proyectosContainer {
+    background-color: #c95757;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.titulo-proyectos{
+    color: gold;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 700;
+    font-size: 52px;
+}
+
+.carousel {
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+}
+
+.proyectosBoxes {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content:center ;
+    align-items: center;
+    
+}
+
+.proyectoBox {
+    background-color: #fff;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.imgBoxContainer,
+.img-box {
+    height: 100%;
+}
+  .ico-box{
+    font-size: 40px;
+    text-decoration: none;
+    color: #000;
+  }
 
 
+  /* Tecnologias */
+.tecnologiasContainer{
+    background: #c95757;
+    height: auto;
+}
+.tecnologia-icon{
+    height: 140px;
+}
+.tecnologias{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: rebeccapurple;
+}
 /* Pantallas medianas pequeñas (entre 576px y 768px) */
 /* Adaptación para pantallas móviles (máximo ancho de 412px) */
 
 @media (max-width: 944px) {
+
     /* Header */
     .header {
-        height: auto; /* Reducir el alto del header */
+        height: auto;
+        /* Reducir el alto del header */
     }
 
     /* Nav */
     .navLinksContainer {
-        gap: 10px; /* Reducir el espacio entre los enlaces de navegación */
+        gap: 10px;
+        /* Reducir el espacio entre los enlaces de navegación */
         margin-right: 15px;
     }
 
     .nav-links {
-        font-size: 18px; /* Reducir el tamaño de fuente de los enlaces de navegación */
+        font-size: 18px;
+        /* Reducir el tamaño de fuente de los enlaces de navegación */
     }
 
     /* Presentación en el header */
     .imgContainer {
-        height: 450px; /* Ajustar el tamaño de la imagen */
+        height: 450px;
+        /* Ajustar el tamaño de la imagen */
     }
 
     .textContainer {
-        width: 100%; /* Hacer que el contenedor del texto ocupe el 100% del ancho */
-        text-align: center; /* Centrar el texto */
+        width: 100%;
+        /* Hacer que el contenedor del texto ocupe el 100% del ancho */
+        text-align: center;
+        /* Centrar el texto */
     }
 
     .name {
-        font-size: 44px; /* Reducir el tamaño de la fuente del nombre */
+        font-size: 44px;
+        /* Reducir el tamaño de la fuente del nombre */
     }
 
     .tag {
-        font-size: 24px; /* Reducir el tamaño de la fuente de la etiqueta */
+        font-size: 24px;
+        /* Reducir el tamaño de la fuente de la etiqueta */
     }
 
     .tag span {
-        font-size: 30px; /* Ajustar el tamaño de la fuente dentro del span */
+        font-size: 30px;
+        /* Ajustar el tamaño de la fuente dentro del span */
     }
 
     /* Redes sociales */
     .icon-bar {
-        width: 100%; /* Asegurarse de que las redes sociales ocupen todo el ancho */
+        width: 100%;
+        /* Asegurarse de que las redes sociales ocupen todo el ancho */
     }
 
     .icons {
-        gap: 10px; /* Reducir la distancia entre los iconos */
+        gap: 10px;
+        /* Reducir la distancia entre los iconos */
     }
 
     .icon {
-        font-size: 38px; /* Ajustar el tamaño de los iconos */
+        font-size: 38px;
+        /* Ajustar el tamaño de los iconos */
     }
 
     .icon-text {
-        font-size: 12px; /* Reducir el tamaño del texto en los iconos */
+        font-size: 12px;
+        /* Reducir el tamaño del texto en los iconos */
     }
 
     /* Líneas superior e inferior */
-    .line-top, .line-bottom {
-        height: 4px; /* Ajustar el grosor de las líneas */
+    .line-top,
+    .line-bottom {
+        height: 4px;
+        /* Ajustar el grosor de las líneas */
     }
 
     /* Sección 'Sobre mí' */
@@ -274,17 +375,21 @@
         padding-left: 18px;
         padding-right: 18px;
         padding-bottom: 18px;
-        height: auto; /* Ajustar la altura de la sección sobre mí */
+        height: auto;
+        /* Ajustar la altura de la sección sobre mí */
     }
-    .sobreMiContainer2{
+
+    .sobreMiContainer2 {
         margin: 10px;
         padding: 10px;
     }
-    .textContainer2 p{
+
+    .textContainer2 p {
         font-size: 18px;
-        
+
     }
 }
+
 /* Ocultar el menú en pantallas pequeñas */
 @media (max-width: 768px) {
     .navLinksContainer {
@@ -295,7 +400,8 @@
         text-align: center;
         top: 50px;
         right: 0;
-        background: rgba(255, 255, 255, 0.9); /* Cambiar la opacidad del fondo */
+        background: rgba(255, 255, 255, 0.9);
+        /* Cambiar la opacidad del fondo */
         backdrop-filter: blur(10px);
         width: 100%;
         height: auto;
@@ -319,7 +425,8 @@
     /* Mostrar el menú cuando se active */
     .navBar.active .navLinksContainer {
         display: flex;
-        background: rgba(4, 85, 131, 0.63); /* Cambiar la opacidad del fondo */
+        background: rgba(4, 85, 131, 0.63);
+        /* Cambiar la opacidad del fondo */
         backdrop-filter: blur(10px);
         z-index: 1;
     }
@@ -327,63 +434,79 @@
 
 
 @media (max-width: 590px) {
+
     /* Header */
     .header {
-        height: auto; /* Reducir el alto del header */
+        height: auto;
+        /* Reducir el alto del header */
     }
 
     /* Nav */
     .navLinksContainer {
-        gap: 10px; /* Reducir el espacio entre los enlaces de navegación */
-       
+        gap: 10px;
+        /* Reducir el espacio entre los enlaces de navegación */
+
     }
 
     .nav-links {
-        font-size: 18px; /* Reducir el tamaño de fuente de los enlaces de navegación */
+        font-size: 18px;
+        /* Reducir el tamaño de fuente de los enlaces de navegación */
     }
 
     /* Presentación en el header */
     .imgContainer {
-        height: 350px; /* Ajustar el tamaño de la imagen */
+        height: 350px;
+        /* Ajustar el tamaño de la imagen */
     }
 
     .textContainer {
-        width: 100%; /* Hacer que el contenedor del texto ocupe el 100% del ancho */
-        text-align: center; /* Centrar el texto */
+        width: 100%;
+        /* Hacer que el contenedor del texto ocupe el 100% del ancho */
+        text-align: center;
+        /* Centrar el texto */
     }
 
     .name {
-        font-size: 34px; /* Reducir el tamaño de la fuente del nombre */
+        font-size: 34px;
+        /* Reducir el tamaño de la fuente del nombre */
     }
 
     .tag {
-        font-size: 24px; /* Reducir el tamaño de la fuente de la etiqueta */
+        font-size: 24px;
+        /* Reducir el tamaño de la fuente de la etiqueta */
     }
 
     .tag span {
-        font-size: 30px; /* Ajustar el tamaño de la fuente dentro del span */
+        font-size: 30px;
+        /* Ajustar el tamaño de la fuente dentro del span */
     }
 
     /* Redes sociales */
     .icon-bar {
-        width: 100%; /* Asegurarse de que las redes sociales ocupen todo el ancho */
+        width: 100%;
+        /* Asegurarse de que las redes sociales ocupen todo el ancho */
     }
 
     .icons {
-        gap: 10px; /* Reducir la distancia entre los iconos */
+        gap: 10px;
+        /* Reducir la distancia entre los iconos */
     }
 
     .icon {
-        font-size: 28px; /* Ajustar el tamaño de los iconos */
+        font-size: 28px;
+        /* Ajustar el tamaño de los iconos */
     }
 
     .icon-text {
-        font-size: 12px; /* Reducir el tamaño del texto en los iconos */
+        font-size: 12px;
+        /* Reducir el tamaño del texto en los iconos */
     }
 
     /* Líneas superior e inferior */
-    .line-top, .line-bottom {
-        height: 4px; /* Ajustar el grosor de las líneas */
+    .line-top,
+    .line-bottom {
+        height: 4px;
+        /* Ajustar el grosor de las líneas */
     }
 
     /* Sección 'Sobre mí' */
@@ -391,154 +514,193 @@
         padding-left: 18px;
         padding-right: 18px;
         padding-bottom: 18px;
-        height: auto; /* Ajustar la altura de la sección sobre mí */
+        height: auto;
+        /* Ajustar la altura de la sección sobre mí */
     }
-    .sobreMiContainer2{
+
+    .sobreMiContainer2 {
         margin: 10px;
         padding: 10px;
     }
-    .textContainer2 p{
+
+    .textContainer2 p {
         font-size: 18px;
-        
+
     }
-    .sobreSpan{
+
+    .sobreSpan {
         font-size: 44px;
         border-bottom: solid 8px;
     }
-    .sobreMiTitulo{
+
+    .sobreMiTitulo {
         font-size: 28px;
     }
 }
 
 
 @media (max-width: 412px) {
+
     /* Header */
     .header {
-        height: auto; /* Reducir el alto del header */
+        height: auto;
+        /* Reducir el alto del header */
     }
 
     /* Nav */
     .navLinksContainer {
-        gap: 10px; /* Reducir el espacio entre los enlaces de navegación */
-       
+        gap: 10px;
+        /* Reducir el espacio entre los enlaces de navegación */
+
     }
 
     .nav-links {
-        font-size: 14px; /* Reducir el tamaño de fuente de los enlaces de navegación */
+        font-size: 14px;
+        /* Reducir el tamaño de fuente de los enlaces de navegación */
     }
 
     /* Presentación en el header */
     .imgContainer {
-        height: 250px; /* Ajustar el tamaño de la imagen */
+        height: 250px;
+        /* Ajustar el tamaño de la imagen */
     }
 
     .textContainer {
-        width: 100%; /* Hacer que el contenedor del texto ocupe el 100% del ancho */
-        text-align: center; /* Centrar el texto */
+        width: 100%;
+        /* Hacer que el contenedor del texto ocupe el 100% del ancho */
+        text-align: center;
+        /* Centrar el texto */
     }
 
     .name {
-        font-size: 40px; /* Reducir el tamaño de la fuente del nombre */
+        font-size: 40px;
+        /* Reducir el tamaño de la fuente del nombre */
     }
 
     .tag {
-        font-size: 20px; /* Reducir el tamaño de la fuente de la etiqueta */
+        font-size: 20px;
+        /* Reducir el tamaño de la fuente de la etiqueta */
     }
 
     .tag span {
-        font-size: 30px; /* Ajustar el tamaño de la fuente dentro del span */
+        font-size: 30px;
+        /* Ajustar el tamaño de la fuente dentro del span */
     }
 
     /* Redes sociales */
     .icon-bar {
-        width: 100%; /* Asegurarse de que las redes sociales ocupen todo el ancho */
+        width: 100%;
+        /* Asegurarse de que las redes sociales ocupen todo el ancho */
     }
 
     .icons {
-        gap: 10px; /* Reducir la distancia entre los iconos */
+        gap: 10px;
+        /* Reducir la distancia entre los iconos */
     }
 
     .icon {
-        font-size: 24px; /* Ajustar el tamaño de los iconos */
+        font-size: 24px;
+        /* Ajustar el tamaño de los iconos */
     }
 
     .icon-text {
-        font-size: 12px; /* Reducir el tamaño del texto en los iconos */
+        font-size: 12px;
+        /* Reducir el tamaño del texto en los iconos */
     }
 
     /* Líneas superior e inferior */
-    .line-top, .line-bottom {
-        height: 4px; /* Ajustar el grosor de las líneas */
+    .line-top,
+    .line-bottom {
+        height: 4px;
+        /* Ajustar el grosor de las líneas */
     }
 
     /* Sección 'Sobre mí' */
     .sobreMiContainer {
-        height: auto; /* Ajustar la altura de la sección sobre mí */
+        height: auto;
+        /* Ajustar la altura de la sección sobre mí */
     }
 }
 
 @media (max-width: 412px) {
+
     /* Header */
     .header {
-        height: auto; /* Reducir el alto del header */
+        height: auto;
+        /* Reducir el alto del header */
     }
 
     /* Nav */
     .navLinksContainer {
-        gap: 10px; /* Reducir el espacio entre los enlaces de navegación */
-      
+        gap: 10px;
+        /* Reducir el espacio entre los enlaces de navegación */
+
     }
 
     .nav-links {
-        font-size: 14px; /* Reducir el tamaño de fuente de los enlaces de navegación */
+        font-size: 14px;
+        /* Reducir el tamaño de fuente de los enlaces de navegación */
     }
 
     /* Presentación en el header */
     .imgContainer {
-        height: 250px; /* Ajustar el tamaño de la imagen */
+        height: 250px;
+        /* Ajustar el tamaño de la imagen */
     }
 
     .textContainer {
-        width: 100%; /* Hacer que el contenedor del texto ocupe el 100% del ancho */
-        text-align: center; /* Centrar el texto */
+        width: 100%;
+        /* Hacer que el contenedor del texto ocupe el 100% del ancho */
+        text-align: center;
+        /* Centrar el texto */
     }
 
     .name {
-        font-size: 40px; /* Reducir el tamaño de la fuente del nombre */
+        font-size: 40px;
+        /* Reducir el tamaño de la fuente del nombre */
     }
 
     .tag {
-        font-size: 20px; /* Reducir el tamaño de la fuente de la etiqueta */
+        font-size: 20px;
+        /* Reducir el tamaño de la fuente de la etiqueta */
     }
 
     .tag span {
-        font-size: 30px; /* Ajustar el tamaño de la fuente dentro del span */
+        font-size: 30px;
+        /* Ajustar el tamaño de la fuente dentro del span */
     }
 
     /* Redes sociales */
     .icon-bar {
-        width: 100%; /* Asegurarse de que las redes sociales ocupen todo el ancho */
+        width: 100%;
+        /* Asegurarse de que las redes sociales ocupen todo el ancho */
     }
 
     .icons {
-        gap: 10px; /* Reducir la distancia entre los iconos */
+        gap: 10px;
+        /* Reducir la distancia entre los iconos */
     }
 
     .icon {
-        font-size: 24px; /* Ajustar el tamaño de los iconos */
+        font-size: 24px;
+        /* Ajustar el tamaño de los iconos */
     }
 
     .icon-text {
-        font-size: 12px; /* Reducir el tamaño del texto en los iconos */
+        font-size: 12px;
+        /* Reducir el tamaño del texto en los iconos */
     }
 
     /* Líneas superior e inferior */
-    .line-top, .line-bottom {
-        height: 4px; /* Ajustar el grosor de las líneas */
+    .line-top,
+    .line-bottom {
+        height: 4px;
+        /* Ajustar el grosor de las líneas */
     }
 
     /* Sección 'Sobre mí' */
     .sobreMiContainer {
-        height: auto; /* Ajustar la altura de la sección sobre mí */
+        height: auto;
+        /* Ajustar la altura de la sección sobre mí */
     }
 }
